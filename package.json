@@ -2,17 +2,21 @@
   "name": "my-vue-app",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "dev": "vite-ssr dev --open",
+    "build": "vue-tsc --noEmit && vite-ssr build",
+    "dev:spa": "vite dev --open",
+    "build:spa": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nuxt/devalue": "^2.0.0",
     "@vueuse/core": "^7.6.2",
     "@vueuse/head": "^0.7.5",
+    "express": "^4.17.3",
     "pinia": "^2.0.11",
     "vite-ssr": "^0.15.0",
-    "vue": "3",
-    "vue-router": "4",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.12",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

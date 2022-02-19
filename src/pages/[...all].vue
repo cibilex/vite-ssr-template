@@ -5,3 +5,18 @@
     <home-btn></home-btn>
   </h1>
 </template>
+
+<script setup lang='ts'>
+import { useHead } from "@vueuse/head";
+
+
+useHead({
+  title:"page 404 title",
+  meta:[
+    {
+      name:"description",
+      content:"page 404 description"
+    }
+  ]
+})
+</script>

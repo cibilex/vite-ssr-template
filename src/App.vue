@@ -1,4 +1,19 @@
-<script></script>
+
+<script setup lang='ts'>
+import { useHead } from "@vueuse/head";
+
+    useHead({
+        title:"default title",
+        meta:[
+            {
+                name:"description",
+                content:"default description"
+            }
+        ]
+    })
+
+</script>
+
 
 <template>
   <router-view v-slot="{ Component, route }">
